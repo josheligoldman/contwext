@@ -9,13 +9,16 @@
     border-radius: 50%;
     position: relative;
 }
+.contwext-element:hover .hover-box {
+    display: flex !important;
+}
 
 .contwext-image {
     padding: 5px;
 }
 
 .hover-box {
-    display: flex !important;
+    display: none !important;
     position: absolute !important;
     width: 500px !important;
     height: 300px !important;
@@ -28,7 +31,7 @@
 
 .article {
     width: 33.3333%;
-    
+
 }
 
 

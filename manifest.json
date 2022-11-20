@@ -14,7 +14,7 @@
                 "https://www.twitter.com/*",
                 "https://twitter.com/*"
             ],
-            "js": ["scripts/content2.js"],
+            "js": ["scripts/content.js"],
             "css": ["stylesheets/styles.css"]
         }
     ],
