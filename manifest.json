@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Miss Information",
+    "version": "1.0",
+    "description": "Instant context for your complicated Twitter feed.",
+
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.twitter.com/*",
+                "https://twitter.com/*"
+            ],
+            "js": ["scripts/content2.js"],
+            "css": ["stylesheets/styles.css"]
+        }
+    ],
+    "host_permissions": [
+        "https://www.twitter.com/*",
+        "https://maximumgross.pythonanywhere.com/*",
+        "https://api.quotable.io/*"
+    ],
+    "permissions": [
+        "nativeMessaging",
+        "background"
+    ]
+}
+  

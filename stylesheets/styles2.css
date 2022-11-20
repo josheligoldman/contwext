@@ -1,0 +1,73 @@
+.miss-information-element {
+    background-size:12px;
+    width: 30px;
+    height: 30px;
+    margin-left:6px;
+    display: inline-block;
+    margin-top:2px;
+    border: medium solid #1DA1F2 !important;
+    border-radius: 50%;
+}
+
+.miss-information-image {
+    padding: 5px;
+    /*margin-left:6px !important;*/
+}
+
+
+/* Hover Box */
+.hover-box-anchor {
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.hover-box-anchor .hover-box {
+    display: flex;
+    position: relative;
+    visibility: hidden;
+    background: white;
+    border: 5px solid #1DA1F2;
+    margin: auto;
+    border-radius: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe   UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; 
+    bottom: 400px;
+    right: 250px;
+}
+.hover-box-anchor:hover .hover-box {
+    visibility: visible;
+}
+
+.article {
+    width: 33.3333333%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    font-size: 30px;
+    height: 100%;
+    text-align: center;
+}
+
+.article-image {
+    object-fit: cover;
+    border-radius: 7.5px;
+    height: 50%;
+    width: 100%;
+    box-shadow: 0px 8px 15px #696969;
+}
+
+.article-heading {
+    font-weight: bold;
+    font-style: italic;
+    font-family: georgia,'times new roman',times,serif;
+    color: black;
+    font-size: 20px;
+    height: 100%;
+}
+
+.article-abstract {
+    margin: 10px;
+    padding: 0px;
+    color: grey;
+    font-size: 16px;
+}
+

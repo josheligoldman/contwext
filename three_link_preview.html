@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  border: 2px solid black;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext .hit1{
+    border-top: 1px solid #E8E8E8;
+}
+
+.tooltip:hover .tooltiptext .hit2{
+    border-top: 1px solid #E8E8E8;
+}
+
+.tooltip:hover .tooltiptext .hit3{
+    border-top: 1px solid #E8E8E8;
+}
+
+.tooltip:hover .tooltiptext .hit1 .image{
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit2 .image{
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit3 .image{
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit1 .image .rounded-corners {
+  border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit2 .image .rounded-corners {
+  border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit3 .image .rounded-corners {
+  border-radius: 10px;
+}
+
+.tooltip:hover .tooltiptext .hit1 .heading{
+    text-align: center;
+    margin: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: georgia,'times new roman',times,serif;
+    color: white;
+}
+
+.tooltip:hover .tooltiptext .hit2 .heading{
+    text-align: center;
+    margin: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: georgia,'times new roman',times,serif;
+    color: white;
+}
+
+.tooltip:hover .tooltiptext .hit3 .heading{
+    text-align: center;
+    margin: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: georgia,'times new roman',times,serif;
+    color: white;
+}
+
+.tooltip:hover .tooltiptext .hit1 .content{
+    margin: 5px;
+    font-size: 10px;
+    font-family: "Georgia", serif;
+    color: #E8E8E8;
+}
+
+.tooltip:hover .tooltiptext .hit2 .content{
+    margin: 5px;
+    font-size: 10px;
+    font-family: "Georgia", serif;
+    color: #E8E8E8;
+}
+
+.tooltip:hover .tooltiptext .hit3 .content{
+    margin: 5px;
+    font-size: 10px;
+    font-family: "Georgia", serif;
+    color: #E8E8E8;
+}
+
+.size_of_img{
+    width:90px
+}
+</style>
+
+
+<div class="tooltip"><img class="size_of_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png" alt="Image 1" />
+    <span class="tooltiptext">
+    <div class = "hit1">
+        <a href="https://www.nytimes.com/2022/02/10/opinion/ottawa-trucker-protests.html" target="_blank" rel="noopener noreferrer">
+        <div class="image">
+            <img src = "https://static01.nyt.com/images/2022/02/10/opinion/10ottawa1/10ottawa1-articleLarge.jpg" width="196" alt="article image" class="wdn-stretch rounded-corners">
+    
+        </div>
+        <div class="heading">
+            The Ottawa Trucker Protests Are a Test of Democracy
+        </div>
+        <div class="content">
+            Peaceful protest is a necessary release valve for pandemic fatigue and frustration.
+        </div>
+    </div>
+    <div class = "hit2">
+        <a href="https://www.nytimes.com/2022/02/14/opinion/canada-protests-black-lives-matter.html" target="_blank" rel="noopener noreferrer">
+        <div class="image">
+            <img src = "https://static01.nyt.com/images/2022/02/14/opinion/14krugman1/merlin_201903054_4d7a7715-b0ab-4b74-8aa9-6cac296ffa19-articleLarge.jpg" width="196" alt="article image" class="wdn-stretch rounded-corners">
+    
+        </div>
+        <div class="heading">
+            When ‘Freedom’ Means the Right to Destroy
+        </div>
+        <div class="content">
+            Anti-vaccine economic vandalism and the right-wingers who love it.
+        </div>
+    </div>
+    <div class = "hit3">
+        <a href="https://www.nytimes.com/2022/03/05/us/trucker-convoy-washington-protest.html" target="_blank" rel="noopener noreferrer">
+        <div class="image">
+            <img src = "https://st4.depositphotos.com/14953852/24787/v/600/depositphotos_247872612-stock-illustration-no-image-available-icon-vector.jpg" width="196" alt="article image" class="wdn-stretch rounded-corners">
+    
+        </div>
+        <div class="heading">
+            Truckers protesting Covid mandates are amassing outside the capital.
+        </div>
+        <div class="content">
+            The convoy and its supporters could move into Washington to hold rallies.
+        </div>
+    </div>
+</span>
+</a>
+</div>
+</html>
