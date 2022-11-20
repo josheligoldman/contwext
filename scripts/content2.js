@@ -26,20 +26,25 @@ function create_popup(nyt_data, tweet) {
         let image_link = article_data['image_link'];
         let headline = article_data['headline'];
 
+        if (headline.length > 80) {
+            headline = headline.slice(0, 77) + '...';
+        }
+
         console.log(`src"${image_link}"`);
         
         let article_div = document.createElement('DIV');
         article_div.classList.add('article');
         article_div.innerHTML = `
             <a href="${web_url}" target="_blank" rel="noopener noreferrer">
-                <img class="article-image" src="${image_link}">
-                <div class="article-headline">
-                    Hello World!
+                <img class="article-image" src="${image_link}" style="box-shadow: 0px ${height * 8/350}px ${height * 15/350}px #696969 !important;">
+                <div class="article-headline" style="font-size: ${width/35}px !important;
+                margin: ${height * 15/350}px ${height * 10/350}px ${height * 10/350}px ${height * 10/350}px !important;">
+                    ${headline}
                 </div>
             </a>
         `;
 
-        article_div.style.cssText += `width: ${100/data.length}% !important;`
+        article_div.style.cssText += `width: ${100/data.length}% !important; padding: ${width * 5/350}px`
 
         hover_box.appendChild(article_div);
     }
